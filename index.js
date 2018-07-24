@@ -51,7 +51,7 @@ const products = {
 function Cashier(name, productsDatabase) {
   // 🔔 не забывайте о this при обращении к свойствам и методам будущего объекта
   this.name = name;
-  this.productsDatabase = {...productsDatabase};
+  this.productsDatabase = {...productsDatabase}; //чтобы скопировать весь объект, а не ссылку, котораяпотом может поменяться
   this.totalPrice = 0;
   this.customerMoney = 0;
   this.changeAmount = 0;
